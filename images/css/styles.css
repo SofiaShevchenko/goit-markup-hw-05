@@ -1,0 +1,276 @@
+/* цвет основного текста #212121 */
+
+/* вторичный цвет #757575 */
+
+/* акцент #219F3 */
+
+/* белый #FFFFFF */
+
+/* задний фон чорный #2F303A */
+
+/* задний фон белый #F5F5F5 */
+
+:root {
+    --primari-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --text-white: #ffffff;
+    --text-black: #000000; 
+    --shadow-white: #F5F4FA; 
+    --shadow-blue: #188CE8;
+    --shadow-grey: #2F303A;
+}
+
+body {
+    background-color: var(--text-white);
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primari-text-color);
+}
+
+
+.logo-link {
+
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-header {
+    color: var(--text-black);
+   
+}
+
+ul {
+    list-style: none;
+}
+
+.site-nav {
+    color: var(--primari-text-color);
+    text-decoration: none;
+
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-color);
+}
+
+.link {
+    color: var(--hover-color);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.link.current {
+    color: var(--accent-color);
+}
+
+.tel a {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+}
+
+.tel a:hover,
+.tel a:focus {
+    color: var(--accent-color);
+}
+
+.site-sec {
+    background-color: var(--shadow-grey) ;
+}
+
+.site-head {
+    color: var(--text-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+
+.site-button {
+    font-family: 'Roboto';
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    border: none;
+}
+
+.site-button:hover,
+.site-button:focus {
+    background-color: var(--shadow-blue);
+}
+
+
+.site-button {
+    cursor: pointer;
+}
+
+.info {
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.info-text {
+    color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.busy {
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-work {
+    background-color: var(--shadow-white);
+}
+
+.team-work li {
+    background-color: var(--text-white);
+}
+
+.team-work h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-work p {
+   font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.foot {
+    background-color: var(--shadow-grey);
+
+}
+
+.logo-footer {
+    color: var(--text-white);
+}
+
+.foot p {
+    color: var(--text-white);
+
+}
+
+.foot-adress {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.contact a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact li :hover,
+.contact li :focus {
+    color: var(--accent-color);
+}
+
+
+.button-filter {
+    color: var(--primari-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+}
+
+
+.button-filter:hover,
+.button-filter:focus,
+.button-filter:active
+{
+    color: var(--text-white);
+    background-color: var(--accent-color);
+}
+
+
+.button-filter {
+    cursor: pointer;
+}
+
+
+.all li {
+    color: var(--text-white);
+}
+
+.all h3 {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primari-text-color);
+}
+
+.all p {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+
+.all li {
+    background-color: var(--text-white);
+}
+
+.all a {
+    text-decoration: none;
+}
