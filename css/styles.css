@@ -118,6 +118,11 @@ ul {
     display: block;
     padding-top: 32px;
     
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .site-navstudia {
@@ -127,7 +132,9 @@ ul {
         padding-top: 32px;
         padding-left: 32px;
       
-
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .webhead {
@@ -152,8 +159,27 @@ ul {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+
+.item {
+    position: relative;
+}
+
+.current::after {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;}
 
 .main-cont {
     display: flex;
@@ -189,6 +215,10 @@ ul {
     text-decoration: none;
     display: flex;
     align-items: center;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel .item + .item {
@@ -248,6 +278,10 @@ margin-left: 50px ;
     padding: 10px 32px 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-button:hover,
@@ -325,10 +359,35 @@ gap: 30px;
 
 }
 
-.cards li {
-    align-items: center;
-   
+.work-cards {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #2F303ACC;
+    
 }
+
+
+.desctop {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    overflow: hidden;
+    margin: 0;
+    bottom: 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+
 
 
 .team {
@@ -385,6 +444,11 @@ gap: 30px;
     background-color: var(--text-white);
     align-items: center;
     color: #AFB1B8;
+
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teamcard {
@@ -474,6 +538,11 @@ gap: 30px;
         background-color: #FFFFFF;
         align-items: center;
         color: #AFB1B8;
+
+        
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -572,6 +641,11 @@ color: #2196f3;
     background-color : rgba(255, 255, 255, 0.1);
     align-items: center;
     color: #FFFFFF;
+
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-soc-icons {
@@ -595,6 +669,10 @@ color: #2196f3;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -638,6 +716,13 @@ color: #2196f3;
     letter-spacing: 0.03em;
     border: none;
     padding: 6px 22px 6px 22px;
+
+
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .knopki {
@@ -688,10 +773,48 @@ color: #2196f3;
 
 }
 
+.oversmall {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.imgport {
+    display: inline-block;
+}
+
+
+.overp {
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(110px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+   
+
+
+.overp:hover .oversmall {
+    transform: translateY(0);
+}
+
 .all li {
 
     flex-basis: calc((100% - 60px) / 3);
-  
+transition-property: color;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .all li:hover{
@@ -712,7 +835,7 @@ color: #2196f3;
     
 }
 
-.all p {
+.all-p {
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -755,7 +878,7 @@ color: #2196f3;
 }
 
 .backdrop.is-hidden {
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
 }
 
@@ -768,6 +891,10 @@ color: #2196f3;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .btn-mod {
@@ -781,4 +908,13 @@ color: #2196f3;
             align-items: center;
             color: #FFFFFF;
             background-color: #FFFFFF;
+            margin-left: 542px;
+            margin-top: 8px;
+            margin-right: 8px;
+            margin-bottom: 543px;
 }
+
+
+
+
+
