@@ -776,6 +776,7 @@ color: #2196f3;
 .oversmall {
     position: relative;
     overflow: hidden;
+   
 }
 
 
@@ -791,7 +792,7 @@ color: #2196f3;
         width: 100%;
         height: 100%;
         transform: translateY(110px);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
         padding: 63px 24px;
 
     font-size: 18px;
@@ -799,6 +800,7 @@ color: #2196f3;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
    
