@@ -791,7 +791,7 @@ color: #2196f3;
         left: 0;
         width: 100%;
         height: 100%;
-        transform: translateY(110px);
+        transform: translateY(101%);
         
         padding: 63px 24px;
 
@@ -805,10 +805,10 @@ color: #2196f3;
 
    
 
-
-.overp:hover .oversmall {
+.port-link:hover .overp {
     transform: translateY(0);
 }
+
 
 .all li {
 
@@ -876,11 +876,16 @@ transition-property: color;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear ;
 
+}
+.backdrop.is-hidden .modal{
+    transform: translate(-50% , -50%) scale(0) ;
 }
 
 .backdrop.is-hidden {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -892,8 +897,8 @@ transition-property: color;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
-
+    transform: translate(-50% ,-50%) scale(1);
+    transition: transform 250ms linear;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
