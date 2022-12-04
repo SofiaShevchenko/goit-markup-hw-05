@@ -445,8 +445,7 @@ gap: 30px;
     align-items: center;
     color: #AFB1B8;
 
-    transition-property: background-color;
-    transition-property: color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -540,7 +539,7 @@ gap: 30px;
         color: #AFB1B8;
 
         
-        transition-property: color;
+        transition-property: color, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
@@ -642,8 +641,7 @@ color: #2196f3;
     align-items: center;
     color: #FFFFFF;
 
-    transition-property: color;
-    transition-property: background-color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -718,8 +716,7 @@ color: #2196f3;
     padding: 6px 22px 6px 22px;
 
 
-    transition-property: background-color;
-    transition-property: color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -813,8 +810,7 @@ color: #2196f3;
 .all li {
 
     flex-basis: calc((100% - 60px) / 3);
-transition-property: color;
-    transition-property: box-shadow;
+    transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
