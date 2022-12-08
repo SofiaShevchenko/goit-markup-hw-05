@@ -403,21 +403,112 @@
 </ul>
 </div>
 </div>
+
+<div class="foot-mod">
+<h3 class="mod-h">
+    Підпишіться на розсилку
+</h3>
+<input type="text" name="mail" id="mail" class="mod-foot-mail" placeholder="E-mail" />
+
+<button type="button" class="subscribe" > 
+Підписатися
+</button>
+</div>
 </footer>
    
 
 <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn-mod" data-modal-close>
-<svg class="btn-svg" width="18px" height="18px">
-    <use href="./images/icons.svg.svg#icon-close-black-18dp-2-1">
+                <svg class="btn-svg" width="18px" height="18px">
+                    <use href="./images/icons.svg.svg#icon-close-black-18dp-2-1">
+            
+            
+                    </use>
+                </svg>
+            </button>
+            <p class="formhead"> Залиште свої дані, ми вам передзвонимо </p>
+            
+            <form class="formodal">
+                <div class="modal-input-div">
+                <div class="label-style">
+<label for="name" class="label-name">
+    Ім'я
+
+</label>
+<input type="text" name="name" class="modal-input" id="name" required />
+<svg class="modal-input-icon" width="18px" height="18px">
+    <use href="./images/icons.svg.svg#icon-people">
+
 
     </use>
 </svg>
-            </button>
+</div>
+     </div>
+
+
+    <div class="modal-input-div">
+<div class="label-style">
+
+<label for="tel" class="label-name">
+    Телефон
+ 
+</label>
+<input type="text" name="tel" id="tel" class="modal-input" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+    required />
+    <svg class="modal-input-icon" width="18px" height="18px">
+        <use href="./images/icons.svg.svg#icon-numa">
+    
+    
+        </use>
+    </svg>
+    </div>
+</div>
+
+
+<div class="modal-input-div">
+<div class="label-style">
+<label for="mail" class="label-name">
+    Пошта
+    <input type="text" name="mail" id="mail" class="modal-input" required />
+</label>
+<svg class="modal-input-icon" width="18px" height="18px">
+    <use href="./images/icons.svg.svg#icon-Vector-3">
+
+
+    </use>
+</svg>
+</div>
+</div>
+
+<div class="modal-input-div">
+<div class="label-style">
+<label for="comment" class="label-name">
+    Коментар
+    <textarea name="comment" id="comment" class="modal-com" placeholder="Введіть текст" required></textarea>
+</label>
+</div>
+
+
+<div class="modal-input-group">
+<input type="checkbox" name="politic" id="politic" class="politic-check 
+visually-hidden">
+<label  for="politic" class="modal-politic"> Погоджуюся з розсилкою та приймаю <a href="" class="deal"> Умови договору</a>
+
+</label>
+
+</div>
+
+
+<div class="modal-butt">
+<button type="submit" class="modal-btn"> Відправити </button>
+</div>
+
+            </form>
+
         </div>
     
- </div>
+
 
 <script src="./js/modal.js">
     (() => {
