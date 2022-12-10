@@ -981,7 +981,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             background-color: #FFFFFF;
             margin-left: 503px;
             margin-top: -32px;
+            cursor: pointer;
+            transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
            
+}
+
+
+.btn-svg:hover,
+.btn-svg:focus {
+    fill: #2196F3;
 }
 
 .formhead {
