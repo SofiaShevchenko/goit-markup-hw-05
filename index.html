@@ -20,6 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./saas/main.scss" />
 </head>
 
 <body>
@@ -404,21 +405,24 @@
 
 </div>
 <div class="foot-mod">
-    <form class="form-foot"></form>
-    <label for="subscribe" class="mod-h"> Підпишіться на розсилку </label>
-    <div class="sub-mail">
-        <input type="text" name="mail" id="mail" class="mod-foot-mail" placeholder="E-mail" />
+    <form class="form-foot">
+<label for="subscribe" class="mod-h"> Підпишіться на розсилку </label>
+<div class="sub-mail">
+    <input type="text" name="mail" id="mail" class="mod-foot-mail" placeholder="E-mail" />
 
 
-        <button type="submit" class="subscribe">
-            <span class="sub-scribe"> Підписатися </span>
-            <svg class="telegram" width="20px" height="20px">
-                <use href="./images/icons.svg.svg#icon-icon-send"></use>
-            </svg>
-        </button>
-    </div>
+    <button type="submit" class="subscribe">
+        <span class="sub-scribe"> Підписатися </span>
+        <svg class="telegram" width="20px" height="20px">
+            <use href="./images/icons.svg.svg#icon-icon-send"></use>
+        </svg>
+    </button>
 </div>
 </div>
+</div>
+
+    </form>
+   
 
 
 </footer>
@@ -444,7 +448,7 @@
 
 </label>
 <input type="text" name="name" class="modal-input" id="name" required />
-<svg class="modal-input-icon" width="18px" height="18px">
+<svg class="modal-input-icon" width="12px" height="12px">
     <use href="./images/icons.svg.svg#icon-people">
 
 
@@ -463,7 +467,7 @@
 </label>
 <input type="text" name="tel" id="tel" class="modal-input" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
     required />
-    <svg class="modal-input-icon" width="18px" height="18px">
+    <svg class="modal-input-icon" width="13px" height="13px">
         <use href="./images/icons.svg.svg#icon-numa">
     
     
@@ -479,7 +483,7 @@
     Пошта
     <input type="text" name="mail" id="mail" class="modal-input" required />
 </label>
-<svg class="modal-input-icon" width="18px" height="18px">
+<svg class="modal-input-icon" width="15px" height="12px">
     <use href="./images/icons.svg.svg#icon-Vector-3">
 
 
@@ -489,8 +493,8 @@
 </div>
 
 <div class="modal-input-div">
-<div class="label-style">
-<label for="comment" class="label-name">
+
+<label for="comment" class="label-name label-style">
     Коментар
     <textarea name="comment" id="comment" class="modal-com" placeholder="Введіть текст" required></textarea>
 </label>
