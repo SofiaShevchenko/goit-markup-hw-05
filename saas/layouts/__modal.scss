@@ -1,0 +1,241 @@
+/* MODAL */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
+
+}
+
+
+.backdrop.is-hidden .backdrop-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop-modal {
+    height: 581px;
+    width: 528px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms linear;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.backdrop-button {
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    margin-left: 450px;
+    margin-top: -25px;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.backdrop-icon:hover,
+.backdrop-icon:focus {
+    fill: #2196F3;
+}
+
+.form-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    margin-bottom: 30px;
+
+
+}
+
+.form-label {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color 250ms linear;
+    margin-top: 4px;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border-color: #2196F3;
+    outline: transparent;
+}
+
+.form-input:hover+svg,
+.form-input:focus+svg {
+    fill: #2196F3;
+}
+
+.form-label_comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+
+    resize: none;
+    max-height: 250px;
+    margin-top: 4px;
+}
+
+.form-label_comment:hover,
+.form-label_comment:focus {
+    border-color: #2196F3;
+    outline: transparent;
+}
+
+.form-label_comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    display: block;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    margin: 30px 123px 40px 123px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 52px 10px 52px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: var(--shadow-blue);
+
+}
+
+.form-label_style {
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.form-label_title {
+    margin-bottom: 4px;
+}
+
+
+
+
+.form-label_politic {
+    display: flex;
+    align-items: center;
+}
+
+.form-label_politic::before {
+    content: " ";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.form-label_checkbox:checked+label::before {
+    border: none;
+    background-color: #2196F3;
+    background-image: url(../images/Vector\ \(6\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.form-label_deal {
+    color: #2196F3;
+    margin-left: 5px;
+}
+
+.form-label_rules {
+    padding-left: 12px;
+}
+
+
+
+
+.form-label_icon {
+    position: absolute;
+    top: 55%;
+    left: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+}

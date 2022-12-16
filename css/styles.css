@@ -79,7 +79,6 @@ img {
     display: block;
 }
 
-/* HEADER */
 .logo {
 
     color: var(--accent-color);
@@ -993,12 +992,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
    
 }
 
-.modal-input-div {
+.form-label {
     position: relative;
     margin-bottom: 10px;
 }
 
-.modal-input {
+.form-input {
     width: 100%;
     height: 40px;
 
@@ -1010,18 +1009,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 4px;
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.form-input:hover,
+.form-input:focus {
     border-color: #2196F3;
     outline: transparent;
 }
 
-.modal-input:hover + svg,
-.modal-input:focus + svg {
+.form-input:hover + svg,
+.form-input:focus + svg {
    fill: #2196F3;
 }
 
-.modal-com {
+.form-label_comment {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1033,17 +1032,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 4px;
 }
 
-.modal-com:hover,
-.modal-com:focus {
+.form-label_comment:hover,
+.form-label_comment:focus {
     border-color: #2196F3;
     outline: transparent;
 }
 
-.modal-com::placeholder {
+.form-label_comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-btn {
+.form-button {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -1067,18 +1066,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.form-button:hover,
+.form-button:focus {
     background-color: var(--shadow-blue);
     
 }
 
-.modal-butt {
-padding: 30px 164px 40px 164px;
-
-}
-
-.label-style {
+.form-label_style {
         
        
         font-family: 'Roboto';
@@ -1093,29 +1087,19 @@ padding: 30px 164px 40px 164px;
             color: #757575;
 }
 
-.label-name {
+.form-label_title {
     margin-bottom: 4px;
 }
 
-.agree {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: #757575;
-
-        
-}
 
 
-.modal-politic {
+
+.form-label_politic {
 display: flex;
 align-items: center;
 }
 
-.modal-politic::before {
+.form-label_politic::before {
 content: " ";
 width: 16px;
 height: 16px;
@@ -1127,7 +1111,7 @@ cursor: pointer;
 
 }
 
-.politic-check:checked + label::before {
+.form-label_checkbox:checked + label::before {
 border: none;
 background-color: #2196F3;
 background-image: url(../images/Vector\ \(6\).svg);
@@ -1136,23 +1120,19 @@ background-position: center;
 
 }
 
-.deal {
+.form-label_deal {
     color: #2196F3;
     margin-left: 5px;
 }
 
-.modal-input-group {
+.form-label_rules {
     padding-left: 12px;
 }
 
 
-.poli-deal {
-    padding-top: 20px;
-    padding-left: 52px;
-    padding-right: 52px;
-}
 
-.modal-input-icon {
+
+.form-label_icon {
     position: absolute;
     top: 55%;
     left: 12px;

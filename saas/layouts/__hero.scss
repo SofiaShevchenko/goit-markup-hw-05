@@ -1,0 +1,113 @@
+/* HERO */
+
+
+.hero {
+    background-color: var(--shadow-grey);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
+
+}
+
+.hero__title {
+    color: var(--text-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+
+.hero__button {
+    font-family: 'Roboto';
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    border: none;
+    padding: 10px 32px 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background-color: var(--shadow-blue);
+}
+
+
+.hero__button {
+    cursor: pointer;
+}
+
+.advantages-list {
+    display: flex;
+    margin-right: -30px;
+
+}
+
+.advantages-list__content {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    display: flex;
+}
+
+.advantages-list__item {
+
+    flex-basis: calc((100% - 60px) / 4);
+}
+
+.advantages-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.advantages-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+
+}
+
+.advantages-list__text {
+    color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+
+/* HERO */

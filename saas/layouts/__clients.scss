@@ -1,0 +1,62 @@
+.clients {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+
+.clients-content__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.clients-content__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+
+.clients-content__item {
+    width: 170px;
+    height: 92px;
+
+}
+
+.clients-content__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    align-items: center;
+    color: #AFB1B8;
+
+
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.clients-content__link:hover,
+.clients-content__link:focus {
+    border-color: #2196F3;
+    color: #2196f3;
+}
+
+.clients-content__icons {
+    fill: currentColor;
+}
+

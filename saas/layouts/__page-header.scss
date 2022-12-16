@@ -1,4 +1,4 @@
-.logo-link {
+.logo {
 
     color: var(--accent-color);
     font-family: 'Raleway';
@@ -17,24 +17,24 @@
 
 }
 
-.site-con {
+.header-list {
     display: flex;
     margin-left: 93px;
 }
 
-
-
-
-.site-con .item:not(:last-child) {
+.header-list .header-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
+.header-list__item {
+    position: relative;
+}
 
 ul {
     list-style: none;
 }
 
-.site-nav {
+.header-list__link {
     color: var(--primari-text-color);
     text-decoration: none;
     display: block;
@@ -47,30 +47,9 @@ ul {
 
 }
 
-.site-navstudia {
-    color: var(--primari-text-color);
-    text-decoration: none;
-    display: block;
-    padding-top: 32px;
-    padding-left: 32px;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.webhead {
-    margin-left: 93px;
-}
-
-
-.site-navstudia:hover,
-.site-navstudia :focus {
-    color: var(--accent-color);
-}
-
-.site-nav:hover,
-.site-nav:focus {
+.header-list__link:hover,
+.header-list__link:focus {
     color: var(--accent-color);
 }
 
@@ -89,9 +68,7 @@ ul {
 
 }
 
-.item {
-    position: relative;
-}
+
 
 .current::after {
     position: absolute;
@@ -104,36 +81,25 @@ ul {
     border-radius: 2px;
 }
 
-.main-cont {
-    display: flex;
-    align-items: center;
-}
-
-
 .link.current {
     color: var(--accent-color);
 }
 
-.tel {
+
+
+.contact-info {
     display: flex;
     margin-left: auto;
 }
 
-.envelope-item {
+.contact-info__svg {
     margin-right: 10px;
     fill: currentColor;
 
 }
 
 
-.icon-vector {
-
-    margin-right: 10px;
-    fill: currentColor;
-
-}
-
-.tel a {
+.contact-info a {
     color: var(--title-text-color);
     text-decoration: none;
     display: flex;
@@ -144,12 +110,12 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tel .item+.item {
+.contact-info .contact-info__mail+.contact-info__tel {
     margin-left: 50px;
 }
 
 
-.tel a:hover,
-.tel a:focus {
+.contact-info a:hover,
+.contact-info a:focus {
     color: var(--accent-color);
 }
