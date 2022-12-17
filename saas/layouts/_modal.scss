@@ -8,17 +8,17 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
 
-}
+    &.is-hidden &-modal {
+        transform: translate(-50%, -50%) scale(0);
+
+    }
 
 
-.backdrop.is-hidden .backdrop-modal {
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 }
 
 .backdrop-modal {
@@ -41,11 +41,10 @@
 
     width: 30px;
     height: 30px;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
     color: #FFFFFF;
     background-color: #FFFFFF;
     margin-left: 450px;
@@ -94,17 +93,18 @@
     padding-left: 42px;
     transition: border-color 250ms linear;
     margin-top: 4px;
-}
 
-.form-input:hover,
-.form-input:focus {
-    border-color: #2196F3;
-    outline: transparent;
-}
 
-.form-input:hover+svg,
-.form-input:focus+svg {
-    fill: #2196F3;
+    &:hover,
+    &:focus {
+            border-color: #2196F3;
+            outline: transparent;
+        }
+    
+    &:hover+svg,
+    &:focus+svg {
+            fill: #2196F3;
+        }
 }
 
 .form-label_comment {
@@ -117,17 +117,18 @@
     resize: none;
     max-height: 250px;
     margin-top: 4px;
+
+    &:hover,
+    &:focus {
+            border-color: #2196F3;
+            outline: transparent;
+        }
+    
+    &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
-.form-label_comment:hover,
-.form-label_comment:focus {
-    border-color: #2196F3;
-    outline: transparent;
-}
-
-.form-label_comment::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-}
 
 .form-button {
     font-family: 'Roboto';
@@ -150,14 +151,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+        background-color: var(--shadow-blue);
+
+    }
 
 }
 
-.form-button:hover,
-.form-button:focus {
-    background-color: var(--shadow-blue);
 
-}
 
 .form-label_style {
 
@@ -178,25 +180,22 @@
     margin-bottom: 4px;
 }
 
-
-
-
 .form-label_politic {
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
+
+    &::before {
+            content: " ";
+            width: 16px;
+            height: 16px;
+            border: 2px solid #212121;
+            border-radius: 2px;
+            display: block;
+            margin-right: 10px;
+            cursor: pointer;
+    
+        }
 }
 
-.form-label_politic::before {
-    content: " ";
-    width: 16px;
-    height: 16px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    display: block;
-    margin-right: 10px;
-    cursor: pointer;
-
-}
 
 .form-label_checkbox:checked+label::before {
     border: none;
@@ -216,14 +215,19 @@
     padding-left: 12px;
 }
 
-
-
-
 .form-label_icon {
     position: absolute;
     top: 55%;
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+
+        fill: #2196F3;
+        
+    }
+
 }
 
 

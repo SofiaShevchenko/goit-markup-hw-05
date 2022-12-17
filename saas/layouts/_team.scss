@@ -17,12 +17,37 @@
 .team-section_content {
     display: flex;
 
+    & li {
+            background-color: var(--text-white);
+    
+        }
+
+        & h3 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
+        
+        & p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: var(--title-text-color);
+                    margin-bottom: 30px;
+                }
+
 }
 
 .team-social__media {
-    display: flex;
+   
     justify-content: center;
-    align-items: center;
+    @extend %flex-align;
     margin-top: 16px;
 
 }
@@ -34,75 +59,39 @@
 
 }
 
-.team-section_link:hover,
-.team-section_link:focus {
-    background-color: #2196F3;
-    color: #ffffff;
-}
-
-
-
 .team-social__icons {
     fill: currentColor;
 
 }
 
 
-
 .team-section_link {
     width: 100%;
     height: 100%;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
     border-radius: 50%;
     background-color: var(--text-white);
-    align-items: center;
     color: #AFB1B8;
 
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: #2196F3;
+            color: #ffffff;
+        }
 }
 
 .team-section_list {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-
-
-
-.team-section_content li {
-    background-color: var(--text-white);
-
-}
-
-.team-social__list:not(:last-child) {
-    margin-right: 10px;
-}
-
-.team-section_list:not(:last-child) {
-    margin-right: 30px;
-}
-
-.team-section_content h3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.team-section_content p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    margin-bottom: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 /* team */
