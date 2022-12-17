@@ -18,11 +18,8 @@
 
                 &__title {
                         color: var(--text-white);
-                        font-weight: 900;
-                        font-size: 44px;
-                        line-height: 1.4;
+                        @include font(900, 44, 1.4, 0.06);   
                         text-transform: uppercase;
-                        letter-spacing: 0.06em;
                         margin-top: 0;
                         margin-bottom: 40px;
                     }
@@ -35,9 +32,7 @@
     font-family: 'Roboto';
     background-color: var(--accent-color);
     color: var(--text-white);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    @include font(700, 16, 1.8, null);
     border: none;
     padding: 10px 32px 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -84,21 +79,15 @@
 
 
 .advantages-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(700, 14, 1.1, 0.03);
     margin-bottom: 10px;
 
 }
 
 .advantages-list__text {
     color: var(--title-text-color);
+    @include font(400, 14, 1.7, 0.03);
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 
 

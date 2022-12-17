@@ -5,13 +5,9 @@
 }
 
 .team-section_title {
+    @include font(700, 36, 1.2, 0.03);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-
 }
 
 .team-section_content {
@@ -23,21 +19,17 @@
         }
 
         & h3 {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 1.2;
+                @include font(500, 16, 1.2, 0.03);
                     text-align: center;
-                    letter-spacing: 0.03em;
                     margin-top: 30px;
                     margin-bottom: 10px;
                 }
         
         & p {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 1.2;
+                @include font(400, 16, 1.2, 0.03);
+                    
                     text-align: center;
-                    letter-spacing: 0.03em;
+        
                     color: var(--title-text-color);
                     margin-bottom: 30px;
                 }

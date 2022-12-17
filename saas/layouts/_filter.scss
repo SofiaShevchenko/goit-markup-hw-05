@@ -10,11 +10,8 @@
     color: var(--primari-text-color);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font(500, 16, 1.6, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     border: none;
     padding: 6px 22px 6px 22px;
 

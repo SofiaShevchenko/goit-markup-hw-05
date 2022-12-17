@@ -1,11 +1,8 @@
 /* WORK */
 .work__title {
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    
+    @include font(700, 36, 1.2, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
 
 }
@@ -27,8 +24,7 @@
     &__text {
         position: absolute;
         width: 100%;
-        font-weight: 700;
-        line-height: 1.14;
+        @include font(700, null, 1.14, null);
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;

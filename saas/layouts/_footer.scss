@@ -23,10 +23,7 @@
 
 .page-footer__adress {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font(400, 14, 1.7, 0.03);
 
 
 }
@@ -34,10 +31,7 @@
 
 .page-footer__contact a {
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font(400, 14, 1.7, 0.03);
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
 
@@ -71,10 +65,7 @@
 .foot-social-media_title {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(700, 14, 1.1, 0.03);
     text-transform: uppercase;
     color: #FFFFFF;
     display: flex;
@@ -131,10 +122,7 @@
 .footer-form__label {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(700, 14, 1.1, 0.03);
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 0px;
@@ -167,14 +155,9 @@
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-
+    @include font(700, 16, 1.8, 0.06);
     @extend %flex-align;
     text-align: center;
-    letter-spacing: 0.06em;
-
     color: #FFFFFF;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
