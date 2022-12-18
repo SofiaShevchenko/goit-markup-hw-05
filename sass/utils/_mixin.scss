@@ -1,0 +1,21 @@
+@mixin font($fw: 700, $fs: 36, $lh: 1.2, $ls: 0.03) {
+    font-weight: $fw;
+    font-size: $fs + px;
+    line-height: $lh;
+    letter-spacing: $ls + em;
+}
+
+
+@mixin transition ($tp: background-color, $td: 250ms, $tf: cubic-bezier(0.4, 0, 0.2, 1)) {
+
+    transition-property: $tp;
+    transition-duration: $td;
+    transition-timing-function: $tf;
+}
+
+@mixin colortransition ($tp: color, $td: 250ms, $tf: cubic-bezier(0.4, 0, 0.2, 1)) {
+
+    transition-property: $tp;
+    transition-duration: $td;
+    transition-timing-function: $tf;
+}

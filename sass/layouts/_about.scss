@@ -16,7 +16,7 @@
         position: relative;
         top: 0;
         right: 0;
-        background-color: #2F303ACC;
+        background-color: getColor('shadow-grey');
 
     }
 
@@ -27,7 +27,7 @@
         @include font(700, null, 1.14, null);
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: getColor('text-white');
         justify-content: center;
         @extend %flex-align;
         padding-top: 27px;

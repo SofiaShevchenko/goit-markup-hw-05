@@ -1,11 +1,11 @@
 .logo {
     @include font(700, 26, 1.11, 0.03);
-    color: var(--accent-color);
+    color: getColor('accent-color');;
     font-family: 'Raleway';
     text-decoration: none;
     
     &-header {
-        color: var(--text-black);
+        color: getColor('text-black');
 
     }
 
@@ -28,38 +28,30 @@
 
 
 .header-list__link {
-    color: var(--primari-text-color);
+    color: getColor('primari-text-color');
     text-decoration: none;
     display: block;
     padding-top: 32px;
 
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include colortransition(color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: getColor('accent-color');
     }
 
 }
 
 .link {
-    color: var(--hover-color);
-    color: var(--accent-color);
+    color: getColor('accent-color');;
     text-decoration: none;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include colortransition(color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     & .current {
-        color: var(--accent-color);
+        color: getColor('accent-color');
     }
 }
 
@@ -72,7 +64,7 @@
     content: "";
     width: 100%;
     height: 4px;
-    background-color: #2196F3;
+    background-color: getColor('accent-color');
     border-radius: 2px;
 }
 
@@ -91,13 +83,10 @@
     }
 
     & a {
-       color: var(--title-text-color);
+       color: getColor('title-text-color');
        text-decoration: none;
        @extend %flex-align;
-
-       transition-property: color;
-       transition-duration: 250ms;
-       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       @include colortransition(color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
    }
 
     & .contact-info__mail+.contact-info__tel {
@@ -106,7 +95,7 @@
 
     & a:hover,
     & a:focus {
-     color: var(--accent-color);
+     color: getColor('accent-color');
                 }
  }
 

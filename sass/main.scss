@@ -3,6 +3,10 @@
 
 @import "./utils/vars";
 
+@import "./utils/mixin";
+
+@import "./utils/variables";
+
 @import "./components/_container";
 
 @import "./components/_body";
@@ -27,7 +31,7 @@
 
 @import "./utils/placeholder";
 
-@import "./utils/mixin";
+
 
 
 

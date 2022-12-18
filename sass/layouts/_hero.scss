@@ -2,7 +2,7 @@
 
 
 .hero {
-    background-color: var(--shadow-grey);
+    background-color: getColor('shadow-grey');
     padding-top: 200px;
     padding-bottom: 200px;
     background-position: center;
@@ -17,7 +17,7 @@
                 rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
 
                 &__title {
-                        color: var(--text-white);
+                        color: getColor('text-white');
                         @include font(900, 44, 1.4, 0.06);   
                         text-transform: uppercase;
                         margin-top: 0;
@@ -30,8 +30,8 @@
 
 .hero__button {
     font-family: 'Roboto';
-    background-color: var(--accent-color);
-    color: var(--text-white);
+    background-color: getColor('accent-color');
+    color: getColor('text-white');
     @include font(700, 16, 1.8, null);
     border: none;
     padding: 10px 32px 10px 32px;
@@ -40,15 +40,12 @@
     cursor: pointer;
 
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    @include transition(background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
  
 
     &:hover,
     &:focus {
-            background-color: var(--shadow-blue);
+            background-color: getColor('shadow-blue');
         }
 }
 
@@ -61,7 +58,7 @@
 .advantages-list__content {
     width: 270px;
     height: 120px;
-    background-color: #F5F4FA;
+    background-color: getColor('shadow-white');
     margin-bottom: 30px;
     justify-content: center;
     border-radius: 4px;
@@ -85,7 +82,7 @@
 }
 
 .advantages-list__text {
-    color: var(--title-text-color);
+    color: getColor('title-text-color');
     @include font(400, 14, 1.7, 0.03);
     font-family: 'Roboto';
 }

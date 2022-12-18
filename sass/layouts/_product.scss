@@ -6,7 +6,7 @@
     list-style: none;
 
     & li {
-            background-color: var(--text-white);
+            background-color: getColor('text-white');
             flex-basis: calc((100% - 60px) / 3);
             transition-property: color, box-shadow;
             transition-duration: 250ms;
@@ -22,7 +22,7 @@
         & h3 {
             @include font(700, 18, 2, 0.06);
             text-decoration: none;
-            color: var(--primari-text-color);
+            color: getColor('primari-text-color');
     
             margin-bottom: 4px;
     
@@ -53,14 +53,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    @extend %width-height;
     transform: translateY(101%);
 
     padding: 63px 24px;
 
     @include font(null, 18, 1.5, 0.03);
-    color: #FFFFFF;
+    color: getColor('text-white');
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -78,6 +77,6 @@
 .product_label {
     @include font(400, 16, 1.8, 0.03);
     text-decoration: none;
-    color: var(--title-text-color);
+    color: getColor('title-text-color');
 
 }

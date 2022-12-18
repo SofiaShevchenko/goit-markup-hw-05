@@ -1,0 +1,18 @@
+$colors: (
+    'primari-text-color': #212121,
+    'title-text-color': #757575,
+    'accent-color': #2196f3,
+    'text-white': #ffffff,
+    'text-black': #000000,
+    'shadow-white': #F5F4FA,
+    'shadow-blue': #188CE8,
+    'shadow-grey': #2F303A,
+    'grey': #AFB1B8,
+); 
+
+@function getColor($key) {
+@return map-get($colors, $key);
+  }
+
+
+

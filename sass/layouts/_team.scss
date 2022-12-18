@@ -1,7 +1,7 @@
 /* team */
 
 .team-section {
-    background-color: var(--shadow-white);
+    background-color: getColor('shadow-white');
 }
 
 .team-section_title {
@@ -14,7 +14,7 @@
     display: flex;
 
     & li {
-            background-color: var(--text-white);
+            background-color:  getColor('text-white');
     
         }
 
@@ -30,7 +30,7 @@
                     
                     text-align: center;
         
-                    color: var(--title-text-color);
+                    color: getColor('title-text-color');
                     margin-bottom: 30px;
                 }
 
@@ -58,13 +58,12 @@
 
 
 .team-section_link {
-    width: 100%;
-    height: 100%;
+    @extend %width-height;
     @extend %flex-align;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--text-white);
-    color: #AFB1B8;
+    background-color: getColor('text-white');
+    color: getColor('grey');
 
     transition-property: color, background-color;
     transition-duration: 250ms;
@@ -72,8 +71,8 @@
 
     &:hover,
     &:focus {
-            background-color: #2196F3;
-            color: #ffffff;
+            background-color: getColor('accent-color');
+            color: getColor('text-white');
         }
 }
 

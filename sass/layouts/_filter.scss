@@ -7,9 +7,8 @@
 }
 
 .filter-page_button {
-    color: var(--primari-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
+    color: getColor('primari-text-color');
+    @extend %roboto-normal;
     @include font(500, 16, 1.6, 0.03);
     text-align: center;
     border: none;

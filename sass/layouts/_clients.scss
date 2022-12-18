@@ -1,9 +1,8 @@
 .clients {
     @include font(700, 36, 1.1, 0.03);
-    font-family: 'Roboto';
-    font-style: normal;
+    @extend %roboto-normal;
     text-align: center;
-    color: #212121;
+    color: getColor('primari-text-color');
     margin-bottom: 50px;
 }
 
@@ -24,14 +23,13 @@
 }
 
 .clients-content__link {
-    width: 100%;
-    height: 100%;
+    @extend %width-height;
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    background-color: #FFFFFF;
+    background-color: getColor('text-white');
     @extend %flex-align;
-    color: #AFB1B8;
+    color: getColor('grey');
 
 
     transition-property: color, border;
@@ -40,8 +38,8 @@
    
     &:hover,
     &:focus {
-            border-color: #2196F3;
-            color: #2196f3;
+            border-color: getColor('accent-color');
+            color: getColor('accent-color');
         }
 }
 

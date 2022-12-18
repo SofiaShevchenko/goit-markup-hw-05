@@ -3,8 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    @extend %width-height;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
 
@@ -45,8 +44,8 @@
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #FFFFFF;
-    background-color: #FFFFFF;
+    color: getColor('text-white');;
+    background-color: getColor('text-white');
     margin-left: 450px;
     margin-top: -25px;
     cursor: pointer;
@@ -59,23 +58,15 @@
 
 .backdrop-icon:hover,
 .backdrop-icon:focus {
-    fill: #2196F3;
+    fill: getColor('accent-color');
 }
 
 .form-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.1;
+    @extend %roboto-normal;
+    @include font(700, 20, 1.1, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-
+    color: getColor('primari-text-color');
     margin-bottom: 30px;
-
-
 }
 
 .form-label {
@@ -97,13 +88,13 @@
 
     &:hover,
     &:focus {
-            border-color: #2196F3;
+            border-color: getColor('accent-color');
             outline: transparent;
         }
     
     &:hover+svg,
     &:focus+svg {
-            fill: #2196F3;
+            fill: getColor('accent-color');
         }
 }
 
@@ -120,7 +111,7 @@
 
     &:hover,
     &:focus {
-            border-color: #2196F3;
+            border-color: getColor('accent-color');
             outline: transparent;
         }
     
@@ -131,29 +122,23 @@
 
 
 .form-button {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    @extend %roboto-normal;
+    @include font(700, 16, 1.8, 0.06);
     display: block;
-    letter-spacing: 0.06em;
 
-    color: #FFFFFF;
+    color: getColor('text-white');
     margin: 30px 123px 40px 123px;
-    background: #2196F3;
+    background: getColor('accent-color');
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 52px 10px 52px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition ( background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     &:hover,
     &:focus {
-        background-color: var(--shadow-blue);
+        background-color: getColor('shadow-blue');
 
     }
 
@@ -164,16 +149,9 @@
 .form-label_style {
 
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1;
-
-
-    letter-spacing: 0.01em;
-
-    color: #757575;
+    @extend %roboto-normal;
+    @include font(400, 12, 1.1, 0.01);
+    color: getColor('title-text-color');
 }
 
 .form-label_title {
@@ -199,7 +177,7 @@
 
 .form-label_checkbox:checked+label::before {
     border: none;
-    background-color: #2196F3;
+    background-color: getColor('accent-color');
     background-image: url(../images/Vector\ \(6\).svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -207,7 +185,7 @@
 }
 
 .form-label_deal {
-    color: #2196F3;
+    color: getColor('accent-color');
     margin-left: 5px;
 }
 
