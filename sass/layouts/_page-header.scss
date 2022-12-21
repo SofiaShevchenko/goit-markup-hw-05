@@ -22,6 +22,20 @@
     &__item {
                     position: relative;
                 }
+
+    @media  screen and (min-width: 768px) {
+    width: 768px  ;
+    display: flex;
+    margin-left: 88px;
+
+    & &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+
+    &__item {
+     position: relative;
+                }
+                }
 }
 
 
@@ -96,14 +110,6 @@
     & a:hover,
     & a:focus {
      color: getColor('accent-color');
-                }
- }
 
-
-
-
-
-
-
-
-
+    }
+}
