@@ -1,16 +1,24 @@
 .product {
 
-    @extend %flex-align;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
 
     & li {
             background-color: getColor('text-white');
-            flex-basis: calc((100% - 60px) / 3);
+            flex-basis: 100%;
             transition-property: color, box-shadow;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 60px) / 2);
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-basis: calc((100% - 60px) / 3);
+            }
         }
     
         & li:hover {
@@ -23,14 +31,15 @@
             @include font(700, 18, 2, 0.06);
             text-decoration: none;
             color: getColor('primari-text-color');
-    
             margin-bottom: 4px;
     
         }
 
-        & a {
+        & a {       height: 100%;
                     text-decoration: none;
-        
+                    display: flex;
+                    flex-direction: column;
+                    
                 }
 
 }
@@ -55,9 +64,7 @@
     left: 0;
     @extend %width-height;
     transform: translateY(101%);
-
     padding: 63px 24px;
-
     @include font(null, 18, 1.5, 0.03);
     color: getColor('text-white');
     background-color: rgba(33, 150, 243, 0.9);
@@ -72,6 +79,8 @@
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-grow: 1;
+   
 }
 
 .product_label {

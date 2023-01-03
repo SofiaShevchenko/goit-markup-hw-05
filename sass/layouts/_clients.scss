@@ -11,10 +11,6 @@
 }
 
 
-
-
-
-
 .clients {
     @include font(700, 36, 1.1, 0.03);
     @extend %roboto-normal;
@@ -32,6 +28,9 @@
 
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         justify-content: center;
@@ -48,18 +47,16 @@
     width: 210px;
     height: 92px;
     flex-basis: calc((100% - 60px) / 2);
-    
+    margin-left: 30px;
+    margin-bottom: 30px;
    
 
-    &:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
+    
 
 
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
         
     }
 
