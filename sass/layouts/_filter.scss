@@ -37,9 +37,24 @@
 .filter-page {
     display: flex;
     margin-bottom: 30px;
-    justify-content: center;
+    flex-wrap: wrap;
+
 
     & .filter-page_list:not(:last-child) {
         margin-right: 8px;
     }
+
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+    }
+}
+
+
+.filter-page_list {
+margin-bottom: 15px;
+
+@media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+}
+
 }

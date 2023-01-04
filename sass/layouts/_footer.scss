@@ -50,6 +50,14 @@
 
 .foot-container {
   text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        text-align: left;
+    }
+       
 }
 
  @media screen and (min-width: 768px) {
@@ -61,14 +69,24 @@
    
  }
 
+ @media screen and (min-width: 1200px) {
+    .page-footer_info {
+            width: 507px;
+        }
+ }
+
 
 .foot-social-media {
 
     margin-left: auto;
    
     @media screen and (min-width: 768px) {
-            margin-left: 0px;
-        }
+    margin-left: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    }
 }
 
 .foot-social-media_title {
@@ -126,6 +144,8 @@
         margin-top: 60px;
         }
 
+
+
 }
 
 .footer-form__label {
@@ -139,7 +159,13 @@
 
 .footer-form__div {
     margin-top: 20px;
-   
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        margin-bottom: 0;
+        width: 358px;
+        text-align: left;
+    }
 }
 
 
@@ -165,9 +191,8 @@
 
 .footer-form_button {
 
-    @extend %roboto-normal;
+    
     @include font(700, 16, 1.8, 0.06);
-    @extend %flex-align;
     text-align: center;
     color: getColor('text-white');
     background: getColor('accent-color');

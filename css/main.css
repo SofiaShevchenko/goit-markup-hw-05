@@ -126,6 +126,8 @@ body {
   height: 100vh;
   padding: 48px 40px;
   background-color: white;
+  transform: translateX(-100%);
+  transition: transform 250ms linear;
 }
 
 .menu-container.is-open {
@@ -656,7 +658,7 @@ body {
 @media screen and (min-width: 1200px) {
   .clients-section {
     padding-top: 94px;
-    padding-bottom: 64px;
+    padding-bottom: 94px;
   }
 }
 
@@ -782,6 +784,14 @@ body {
 .foot-container {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .foot-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .page-footer_info {
@@ -790,12 +800,22 @@ body {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .page-footer_info {
+    width: 507px;
+  }
+}
 .foot-social-media {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .foot-social-media {
     margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-social-media {
+    margin-left: auto;
   }
 }
 
@@ -862,6 +882,14 @@ body {
 
 .footer-form__div {
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__div {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+    text-align: left;
+  }
 }
 
 .footer-form_mail {
@@ -938,10 +966,24 @@ body {
 .filter-page {
   display: flex;
   margin-bottom: 30px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .filter-page .filter-page_list:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter-page {
+    justify-content: center;
+  }
+}
+
+.filter-page_list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .filter-page_list {
+    margin-bottom: 0px;
+  }
 }
 
 .product {
@@ -1220,12 +1262,12 @@ body {
   opacity: 0;
 }
 
-.contact-info a, .advantages-list__content, .work-cards__text, .team-social__media, .team-section_link, .clients-content__link, .foot-social-media_list, .foot-social-media_link, .footer-form_button, .header, .backdrop-button, .form-label_politic {
+.contact-info a, .advantages-list__content, .work-cards__text, .team-social__media, .team-section_link, .clients-content__link, .foot-social-media_list, .foot-social-media_link, .header, .backdrop-button, .form-label_politic {
   display: flex;
   align-items: center;
 }
 
-.clients, .foot-social-media_title, .footer-form__label, .footer-form_button, .filter-page_button, .form-title, .form-button, .form-label_style {
+.clients, .foot-social-media_title, .footer-form__label, .filter-page_button, .form-title, .form-button, .form-label_style {
   font-family: "Roboto";
   font-style: normal;
 }

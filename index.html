@@ -65,7 +65,7 @@
 </div>
 
 
-<!--<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container js-menu-container" id="mobile-menu">
     <button type="button" class="menu-toogle menu-toogle--cross js-close-menu">
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use href="./images/icons.svg.svg#icon-close_40px" class="menu-toogle__icon"></use>
@@ -105,7 +105,7 @@
             </ul>
         </div>
     </div>
-</div> -->
+</div> 
 
     
 </header>
@@ -218,10 +218,15 @@
 
         <ul class="team-section_content">
             <li class="team-section_list">
-                <img 
-                srcset="./images/img_group_designer_1px.jpg 1x, ./images/img_group_designer_px.jpg 2x" 
+                <!--<picture>
+                    <source srcset="./images/img_group_designer_1px.jpg 1x, ./images/img_group_designer_px.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img1-354.jpg 1x, ./images/img1-354@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img1-450.jpg 1x, ./images/img1-450@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img src="./images/man3.jpg" alt="Ігор
+                    Дем'яненко дизайнер" />
+                </picture> -->
                 
-                src="./images/man3.jpg" alt="продукт дезайнер" width="270">
+                <img src="./images/man3.jpg" alt="продукт дезайнер" width="270">
     <div class="team-section_div">
                 <h3>Ігор Дем'яненко</h3>
                  <p>
@@ -368,7 +373,7 @@
             </ul>
                         
                         
-                </li>
+                
             </ul>
 
         </div>
@@ -635,21 +640,8 @@
 </script>
 
 
-<script src="./js/mobile-menu.js">
- (() => {
-        const refs = {
-            openMenuBtn: document.querySelector(".js-open-menu"),
-            closeMenuBtn: document.querySelector(".js-close-menu"),
-            menu: document.querySelector(".js-menu-container"),
-        };
+<script src="./js/menu.js">
 
-        refs.openMenuBtn.addEventListener("click", toggleMenu);
-        refs.closeMenuBtn.addEventListener("click", toggleMenu);
-
-        function toggleMenu() {
-            refs.menu.classList.toggle("is-hidden");
-        }
-    })();
 </script>
 
 </body>
