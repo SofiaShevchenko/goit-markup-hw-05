@@ -1,4 +1,13 @@
 /* WORK */
+
+
+@media screen and (max-width: 1199px) {
+    .section--none {
+        display: none;
+    }
+}
+
+
 .work__title {
     
     @include font(700, 36, 1.2, 0.03);
